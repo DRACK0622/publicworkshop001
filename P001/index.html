@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-language" content="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Example work">
+    <meta name="author" content="Armin Fathi">
+    <meta name="publisher" content="Armin Fathi">
+    <meta name="copyright" content="Armin Fathi">
+    <meta name="description" content="Some Example of UI designs.">
+    <meta name="page-topic" content="Home">
+    <meta name="page-type" content="Blogging">
+    <meta name="audience" content="Everyone">
+    <meta name="robots" content="index, follow">
+    <title>Armin's Workshop</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/HW/jf001.js"></script>
+    <script>
+        function al(){
+        document.getElementById("btn").onclick = function() {
+        document.getElementById("res01").innerHTML=document.getElementById("num").value;
+        }
+        }
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById("btn2").onclick=function(){
+                alert(document.getElementById("num").value);
+            };
+        });
+    </script>
+    <style>
+        #res01{
+            height: 500px;
+        }
+        #res02{
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="num">
+    <button id="btn" onclick="al()">btn</button>
+    <button id="btn2">btn2</button>
+<br><br><br>
+<div class="col-sm-6 bg-danger" id="res01">
+    text 1
+</div>
+<br>
+<div class="col-sm-6 bg-warning" id="res02">
+    <p id="res03"></p>
+</div>
+
+</body>
+</html>
